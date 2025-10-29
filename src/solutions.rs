@@ -1,5 +1,5 @@
-mod day1; mod day2; mod day3; mod day4; mod day5;
-mod day6; mod day7; mod day8; mod day9; mod day10;
+mod day01; mod day02; mod day03; mod day04; mod day05;
+mod day06; mod day07; mod day08; mod day09; mod day10;
 mod day11; mod day12; mod day13; mod day14; mod day15;
 mod day16; mod day17; mod day18; mod day19; mod day20;
 mod day21; mod day22; mod day23; mod day24; mod day25;
@@ -13,15 +13,15 @@ pub trait Solution {
 pub fn get_solution(day: u32) -> Result<Box<dyn Solution>> {
     match day {
         0 => Err(anyhow::anyhow!("Day cannot be zero")),
-        1 => Ok(Box::new(day1::Day1)),
-        2 => Ok(Box::new(day2::Day2)),
-        3 => Ok(Box::new(day3::Day3)),
-        4 => Ok(Box::new(day4::Day4)),
-        5 => Ok(Box::new(day5::Day5)),
-        6 => Ok(Box::new(day6::Day6)),
-        7 => Ok(Box::new(day7::Day7)),
-        8 => Ok(Box::new(day8::Day8)),
-        9 => Ok(Box::new(day9::Day9)),
+        1 => Ok(Box::new(day01::Day1)),
+        2 => Ok(Box::new(day02::Day2)),
+        3 => Ok(Box::new(day03::Day3)),
+        4 => Ok(Box::new(day04::Day4)),
+        5 => Ok(Box::new(day05::Day5)),
+        6 => Ok(Box::new(day06::Day6)),
+        7 => Ok(Box::new(day07::Day7)),
+        8 => Ok(Box::new(day08::Day8)),
+        9 => Ok(Box::new(day09::Day9)),
         10 => Ok(Box::new(day10::Day10)),
         11 => Ok(Box::new(day11::Day11)),
         12 => Ok(Box::new(day12::Day12)),
